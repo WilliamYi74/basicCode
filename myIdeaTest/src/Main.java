@@ -1,17 +1,16 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import com.yunwuyun.constructor.Constructor;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Opt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        testConstructor();
+    }
 
-        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Ctrl+D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Cmd+F8.
-            System.out.println("i = " + i);
-        }
+    private static void testConstructor() {
+        Constructor c1 = new Constructor();
+        Constructor c2 = new Constructor("william");
+        Constructor c3 = new Constructor("william", 17);
+        System.out.println("c1->name:" + c1.getName());
+        System.out.println("c2->name:" + c2.getName());
+        System.out.println("c3->toString:" + c3);
     }
 }
