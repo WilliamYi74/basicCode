@@ -37,3 +37,4 @@ public class StringTest {
         System.out.println(a == c); // false +号会使用StringBuilder进行拼接再toString生成一个新的String对象 所以地址不一样
     }
 }
+
